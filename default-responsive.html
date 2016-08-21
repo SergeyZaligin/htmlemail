@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Основные элементы письма responsive</title>
+    <style type="text/css">
+      html{-webkit-text-size-adjust:none; -ms-text-size-adjust:none;}
+      @media only screen and (min-width: 600px){
+        .table600{
+          width: 600px !important;
+        }
+      }
+
+      @media only screen and (max-device-width: 600px),
+             only screen and (max-width: 600px){
+        table[class="table600"]{
+          width: 100% !important;
+        }
+      }
+    </style>
+  </head>
+
+
+  <body style="margin: 0;padding: 0;">
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+      <td align="center" bgcolor="#ffffff">
+        <!--[if (gte mso 9)|(IE)]>
+        <table width="600" border="0" cellspacing="0" cellpadding="0">
+          <tr><td><![endif]-->
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table600" style="max-width:600px; min-width:320px; ">  
+  
+          <tr>
+            <td>
+              <!--[if !mso]><!-->
+              <div style="display: none !important; font-size: 0px; font-color: #ffffff; ">
+                Текст письма до его открытия.
+              </div>
+              <!--<![endif]-->
+
+              <!--preheader-->
+            </td>
+          </tr>
+
+          <tr>
+            <td align="center">
+              <!--header-->
+            </td>
+          </tr>
+
+          <tr>
+            <td align="center">
+              <!--content-->
+            </td>
+          </tr>
+
+          <tr>
+            <td align="center">
+              <!--footer-->
+            </td>
+          </tr>
+
+        </table>
+
+        <!--[if (gte mso 9)|(IE)]>
+         </td></tr>
+        </table><![endif]-->
+
+      </td>
+    </tr>
+  </table>
+
+  </body>
+</html>
